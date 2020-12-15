@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+
+    /*** All direct children ***/
+    & > * {
+        margin-right: 25px;
+    }
+}
