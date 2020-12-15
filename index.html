@@ -4,13 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="images/icon.png" type="image/png"> -->
+    <link rel="icon" href="images/icon.png" type="image/png">
     <link rel="stylesheet" href="styles/css/master.css">
-    <title>Document</title>
+    <title>Survey</title>
 </head>
 
 <body>
+    <main>
+        <form action="#" id="survey-form">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">
+                <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
+                - Responsive web design project
+            </p>
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" placeholder="18 to 25" min="18" max="25">
+            <label for="dropdown">Class:</label>
+            <select id="dropdown">
+                <option>Warrior</option>
+                <option>Priest</option>
+                <option>Mage</option>
+            </select>
+            <fieldset>
+                <legend>Gender</legend>
+                <div>
+                    <input id="radio-1" type="radio" name="group" value="backend-stuff">
+                    <label for="radio-1">Male</label>
+                </div>
+                <div>
+                    <input id="radio-2" type="radio" name="group" value="backend-stuff">
+                    <label for="radio-2">Female</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Role</legend>
+                <div>
+                    <input id="check-1" type="checkbox" value="backend-stuff">
+                    <label for="check-1">Tank</label>
+                </div>
 
+                <div>
+                    <input id="check-2" type="checkbox" value="backend-stuff">
+                    <label for="check-2">Heal</label>
+                </div>
+
+                <div>
+                    <input id="check-3" type="checkbox" value="backend-stuff">
+                    <label for="check-3">DPS</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="textarea">Comments:</label>
+                <textarea id="textarea" placeholder="Leave a message..." rows="10" cols="50"></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <a href="https://github.com/Jamezuki/survey-form" target="_blank"><img src="images/white.png" alt="Github"></a>
+    </footer>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 
 </html>

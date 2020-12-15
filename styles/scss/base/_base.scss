@@ -10,8 +10,13 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     min-height: 100vh;
+    background-image: $background;
+    background-attachment: fixed;
+    color: $text-color;
     font-family: $font-family;
     font-size: $font-size;
     line-height: $line-height;
